@@ -1,5 +1,8 @@
 <?php
 
+	ini_set('display_errors', true);
+	error_reporting(E_ALL);
+
 	$language = "PHP";
 	$confidencial = "wow suck private very confidential";
 
