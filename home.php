@@ -8,4 +8,4 @@
 	$titulo = "MejorandoPHP";
 
 	//Llamando una funcion
-	view("view", compact('language', 'titulo'));
+	view("home", compact('language', 'titulo'));
