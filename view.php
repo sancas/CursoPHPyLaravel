@@ -8,3 +8,5 @@
 Aprendiendo <strong><?= $language ?></strong>
 </body>
 </html>
+
+<?= $confidencial ?>
