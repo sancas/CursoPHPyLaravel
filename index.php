@@ -7,21 +7,10 @@
 	require 'config.php';
 	require 'helpers.php';
 
-	//Llamar a los controladores individuales
+	//Llamar al controlador indicado
 
-	//index.php
-	if (empty ($_GET['url']))
+	if (empty($_GET['url']))
 	{
-		require 'controllers/home.php';
+		$_GET['url'] = 'home';
 	}
-	//index.php?url=contactos
-	else if ($_GET['url'] == 'contactos')
-	{
-		require 'controllers/contactos.php';
-	}
-	//index.php?url=asdasdasd
-	else
-	{
-		header("HTTP/1.0 404 Not Found");
-		exit("Pagina no encontrada");
-	}
+	controller($_GET['url']);
